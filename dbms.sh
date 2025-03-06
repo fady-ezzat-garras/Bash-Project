@@ -7,12 +7,18 @@ mainMenu() {
         select choice in "Create Database" "List Databases" "Drop Database" "Connect to Database" "Exit"
          do
             case $REPLY in
-                1) createDB 
-                2) listDB 
-                3) dropDB 
-                4) connectDB 
-                5) exit 0 
-                *) echo "Invalid choice" 
+                1) createDB
+			;;
+                2) listDB
+			;;
+                3) dropDB
+			;;
+                4) connectDB
+			;;
+                5) exit 0
+			;;
+                *) echo "Invalid choice"
+			;;
             esac
             break
         done
@@ -98,15 +104,15 @@ tableMenu() {
         select choice in "Create Table" "List Tables" "Drop Table" "Insert" "View" "Delete" "Update" "Exit"
 	do
             case $REPLY in
-                1) createTable 
-                2) listTables 
-                3) dropTable 
-                4) insertData 
-                5) viewData 
-                6) deleteData 
-                7) updateData 
-                8) return 
-                *) echo "Invalid choice" 
+                1) createTable ;;
+                2) listTables ;;
+                3) dropTable ;;
+                4) insertData ;;
+                5) viewData ;;
+                6) deleteData ;;
+                7) updateData ;;
+                8) return ;;
+                *) echo "Invalid choice" ;;
             esac
             break
         done
